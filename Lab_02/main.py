@@ -125,7 +125,7 @@ def main():
     comp_score = 0
     
     while True:
-        selection = check_input.get_int('RPS Menu:\n1. Play Game\n2. Show Score\n3. Quit\n')
+        selection = check_input.get_int_range('RPS Menu:\n1. Play Game\n2. Show Score\n3. Quit\n', 1, 3)
         if selection == 1:
             # create variables that save player and comp choice
             player = weapon_menu()
